@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" name="author" content="Luis Adrian Cardona Lopez"/>
+        <title>PRACTICA_JAVASCRIPT</title> 
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+        <script src="script.js"></script> 
+        <link rel="stylesheet" type="text/css" href="styles.css" />  
+        <link rel="shortcut icon" href="pokebola.JPG">         
+    </head>
+    <body>
+        <header>
+            <figure>
+                <img  src="pokemon.jpg"/>
+            </figure>
+        </header>
+        <main>
+            <article>
+                <div class= "consulta">
+                <ul>
+                    <li><input type="search" name ="buscador" id ="idSearch" placeholder="Search " ></li>
+                    <li><input class= "img" type="image" src="buscador.JPG"  onclick="poke_search()"alt ="Submit" ></li>
+                </ul>
+                </div>
+
+            </article>
+             <figure>
+                <ul>
+                <li> <h2> nombre:</h2>
+                       <p id="nombrePokemon"> </p> </li>
+                    <a ><img class= "pokemon" id="imagen" src="#" alt=""></a>
+                     <li> <h2> Descripción:</h2>   <p id="descripcion"> </p>          </li>
+                     <li> <h2> Habilidad:</h2>   <p id="habilidad"></p>           </li>
+                     <li> <h2> Evolucion:</h2>   <p id="evolucion"></p>           </li>
+                     <li id="Evolucion"  hidden="hidden"><input type="submit" onclick="nameEvolution()" value="evolucionar" ></li>
+                </ul>
+        </main>
+    </body>
+</html>
